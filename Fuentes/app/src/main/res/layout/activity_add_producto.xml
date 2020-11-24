@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AddProductoActivity"
+    android:background="@color/colorPrimaryLight">
+
+    <include layout="@layout/toolbar"></include>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="@dimen/marginTopTitulos">
+
+            <!--- Codigo del Producto -->
+            <!--Nombre-->
+            <TextView
+                android:text="Nombre Del Producto"
+                android:layout_width="wrap_content"
+                android:textSize="@dimen/tituloIngreso"
+                android:textColor="@color/primaryText"
+                android:layout_height="wrap_content"/>
+            <EditText
+                android:id="@+id/crearNombreTxt"
+                android:background="@color/textIcons"
+                android:textColor="@color/primaryText"
+                android:textSize="@dimen/editTextIngresos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <!-- Descripcion-->
+            <TextView
+                android:layout_marginTop="@dimen/marginTopTitulos"
+                android:text="Descripcion del Producto"
+                android:layout_width="wrap_content"
+                android:textSize="@dimen/tituloIngreso"
+                android:textColor="@color/primaryText"
+                android:layout_height="wrap_content"/>
+            <EditText
+                android:id="@+id/crearDescTxt"
+                android:background="@color/textIcons"
+                android:textColor="@color/primaryText"
+                android:textSize="@dimen/editTextIngresos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <!-- Tipo-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Tipo de Producto"
+                    android:textColor="@color/primaryText"
+                    android:textSize="@dimen/tituloIngreso" />
+                <Spinner
+                    android:backgroundTint="@color/primaryText"
+                    android:id="@+id/crearAreaTxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2" />
+            <!-- Valor-->
+            <TextView
+                android:layout_marginTop="@dimen/marginTopTitulos"
+                android:text="Valor Producto"
+                android:layout_width="wrap_content"
+                android:textSize="@dimen/tituloIngreso"
+                android:textColor="@color/primaryText"
+                android:layout_height="wrap_content"/>
+            <EditText
+                android:id="@+id/crearValorTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/textIcons"
+                android:textColor="@color/primaryText"
+                android:textSize="@dimen/editTextIngresos"
+                android:inputType="date"
+                android:focusable="false"
+                android:clickable="true"
+                android:maxLines="1"/>
+
+
+</LinearLayout>
+</LinearLayout>
+

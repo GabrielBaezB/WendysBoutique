@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    tools:context=".ViewProductoActivity">
+
+    <include layout="@layout/toolbar"></include>
+
+    <ImageView
+        android:id="@+id/view_img_producto"
+        android:layout_width="match_parent"
+        android:layout_height="249dp"
+        android:layout_margin="@dimen/marginTop10dp"></ImageView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:textSize="@dimen/viewTextIngresados"
+            android:layout_margin="@dimen/marginTop10dp"
+            android:id="@+id/view_nombre_producto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+        </TextView>
+
+        <TextView
+            android:textSize="@dimen/viewTextIngresados"
+            android:layout_margin="@dimen/marginTop10dp"
+            android:id="@+id/view_desc_producto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+        </TextView>
+
+        <TextView
+            android:textSize="@dimen/viewTextIngresados"
+            android:layout_margin="@dimen/marginTop10dp"
+            android:id="@+id/view_precio_producto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+        </TextView>
+
+        <Button
+            android:text="Agregar al Carrito"
+            android:id="@+id/view_btn_agregar_carrito"
+            android:layout_margin="@dimen/marginTop10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </Button>
+
+
+    </LinearLayout>
+</LinearLayout>
